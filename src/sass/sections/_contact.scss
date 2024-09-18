@@ -1,0 +1,53 @@
+.contact{
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+  padding: 6.25rem 20rem;
+  display: flex;
+  justify-content: center;
+  .contact-content{
+    z-index: 3;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    background-color: #F4F3F0;
+    border-radius: 16px;
+    padding: 5rem;
+    .text{
+      width: 90%;
+      display: flex;
+      text-align: start;
+      color: var(--dark);
+      font-size: 28px;
+      line-height: 33.6px;
+    }
+    .btn{
+      padding: 15px 25px;
+      width: auto;
+      justify-self: flex-end;
+      border: none;
+      border-radius: 0.5rem;
+      background-color: var(--green);
+      color: white;
+      font-size: 20px;
+      line-height: 28px;
+      cursor: pointer;
+    }
+  }
+  .background{
+    z-index: 4;
+    .ellipse{
+      position: absolute;
+      height: 100%;
+      width: 30rem;
+      border-radius: 100%;
+      filter: blur(100px);
+    }
+    .orange{
+      background-color: #B87D5859;
+      top: 60%;
+      left: 10%;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+footer{
+  background-color: var(--dark);
+  padding: 100px 136px;
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .upper-logo{
+      img{
+        width: 100%;
+      }
+    }
+    .wrapper-container{
+      display: flex;
+      padding-top: 4.5rem;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 52px;
+      .list{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .page{
+          display: flex;
+          flex-direction: column;
+          gap: 9px;
+          li{
+            list-style-type: none;
+          }
+          .main{
+            color: #B87D58;
+            font-size: 14px;
+            line-height: 19.6px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+          }
+          .link{
+            white-space: nowrap;
+            color: white;
+            line-height: 22.4px;
+          }
+        }
+      }
+      .newsteller{
+        margin-left: 85px;
+        .content{
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          .main{
+            color: #B87D58;
+            font-size: 14px;
+            line-height: 19.6px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+          }
+          .link{
+            width: 65%;
+            color: white;
+            line-height: 22.4px;
+          }
+          .emails{
+            position: relative;
+            input{
+              width: 70%;
+              outline: none;
+              padding: 14px 25px;
+              border-radius: 8px;
+              border: 1px solid #E5E7EB;
+              background-color: #F9FAFB;
+            }
+            .submit-button{
+              position: absolute;
+              cursor: pointer;
+              top: 8%;
+              right: 31%;
+              padding: 8px 10px;
+              color: #FAFAFC;
+              line-height: 22.4px;
+              background-color: var(--dark);
+              border: none;
+              border-radius: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+    .lower{
+      padding-top: 2rem;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      .symbol{
+        display: flex;
+        gap: 0.5rem;
+        span{
+          color: white;
+          line-height: 22.4px;
+        }
+      }
+      .social-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        li{
+          list-style-type: none;
+          color: white;
+          zoom: 1.5;
+        }
+      }
+    }
+  }
+}

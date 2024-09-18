@@ -1,0 +1,49 @@
+.services{
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+  padding: 8rem 7.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .upper-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding-bottom: 3.2rem;
+    .title{
+      font-size: 32px;
+      color: var(--green);
+      font-family: var(--font-source);
+      line-height: 38.4px;
+    }
+    .description{
+      color: var(--dark);
+      line-height: 22.4px;
+      width: 47%;
+    }
+  }
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .background{
+    z-index: -1;
+    .ellipse{
+      position: absolute;
+      height: 100%;
+      width: 30rem;
+      border-radius: 100%;
+      filter: blur(200px);
+    }
+    .gray{
+      background-color: #3A5F5660;
+      top: 70%;
+      left: -15%;
+    }
+  }
+}

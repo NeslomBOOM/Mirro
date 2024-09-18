@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --green: #3A5F56;
+  --orange: #B87D58;
+  --dark: #292C32;
+  --accent-color1: #ffffff;
+  --accent-color2: #555555;
+  --accent-color3: #cccccc;
+  --font-source: "Source Sans 3", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.app-container {
+  background-color: white;
+  font-family: var(--font-roboto);
+  overflow-x: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 1080px) {
+  .app-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar {
+  background-color: #111111;
+  width: 0.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+}
