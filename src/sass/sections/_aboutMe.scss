@@ -60,3 +60,12 @@
     }
   }
 }
+
+@media screen and (min-width: 280px) and (max-width: 1080px){
+  .about-me{
+    padding: 1rem 1.5rem;
+    .content-container{
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
 import logo from "./../assets/logo.svg";
 import {FaShoppingCart} from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdClose } from "react-icons/md";
+
 
 const Navbar = () => {
     const [navState, setNavState] = useState(false);
@@ -9,7 +12,16 @@ const Navbar = () => {
             <div className="brand">
                 <img src={logo} alt=""/>
             </div>
-            <div className="links-container">
+            <div className="toggle-container">
+                <div className="toggle">
+                    {navState ? (
+                        <MdClose onClick={() => setNavState(false)}/>
+                    ) : (
+                        <GiHamburgerMenu onClick={() => setNavState(true)}/>
+                    )}
+                </div>
+            </div>
+            <div className={`links-container ${navState ? "nav-visible" : ""}`}>
                 <ul className="links">
                     <li><a href="#Presents">Presents</a></li>
                     <li><a href="#Prints">Prints</a></li>

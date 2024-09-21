@@ -115,3 +115,28 @@ footer{
     }
   }
 }
+
+@media screen and (min-width: 280px) and (max-width: 1080px){
+  footer{
+    padding: 1rem 1.5rem;
+    .container{
+      .wrapper-container{
+        flex-direction: column;
+        padding-top: 1.5rem;
+        .newsteller{
+          margin: 0;
+        }
+      }
+      .lower{
+        flex-direction: column;
+        align-items: flex-start;
+        .symbol{
+          flex-direction: column;
+        }
+        .social-wrapper{
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+}

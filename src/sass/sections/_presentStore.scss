@@ -82,3 +82,29 @@
     }
   }
 }
+
+@media screen and (min-width: 280px) and (max-width: 1080px){
+  .present-store{
+    padding: 1rem 1.5rem;
+    .upper-container{
+      padding: 1.5rem;
+      .description{
+        width: 100%;
+      }
+    }
+    .cards{
+      grid-template-columns: repeat(1, 1fr);
+      .card-presentstore{
+        img{
+          zoom: 0.5;
+        }
+        .card-text{
+          padding: 1rem;
+        }
+      }
+    }
+    .presetstore-btn{
+      padding-bottom: 0.5rem;
+    }
+  }
+}
