@@ -1,0 +1,71 @@
+// Переменные для цветовой схемы
+$background-color: #fff;
+$overlay-background: rgba(0, 0, 0, 0.5);
+$button-background: #ff5f5f;
+$button-hover-background: #ff4a4a;
+$text-color: #333;
+
+// Миксин для центровки модального окна
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes modal-fade-in {
+  from {
+    transform: translateY(-500px) scale(0.5);
+  }
+  to {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $overlay-background;
+  z-index: 1000;
+  @include flex-center;
+
+
+  .modal-content {
+    background: $background-color;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    position: relative;
+    animation: modal-fade-in 1s forwards;
+
+    h2 {
+      margin: 0 0 15px;
+      color: $text-color;
+    }
+
+    p {
+      margin: 0 0 20px;
+    }
+
+    .close-btn {
+      background: $button-background;
+      color: $background-color;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+
+      &:hover {
+        background: $button-hover-background;
+      }
+    }
+  }
+}
+
+
