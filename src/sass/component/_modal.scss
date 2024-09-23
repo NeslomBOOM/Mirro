@@ -1,11 +1,7 @@
-// Переменные для цветовой схемы
 $background-color: #fff;
 $overlay-background: rgba(0, 0, 0, 0.5);
-$button-background: #ff5f5f;
-$button-hover-background: #ff4a4a;
 $text-color: #333;
 
-// Миксин для центровки модального окна
 @mixin flex-center {
   display: flex;
   align-items: center;
@@ -51,7 +47,7 @@ $text-color: #333;
     }
 
     .close-btn {
-      background: $button-background;
+      background: var(--green);
       color: $background-color;
       border: none;
       padding: 10px 15px;
@@ -60,9 +56,10 @@ $text-color: #333;
       position: absolute;
       top: 10px;
       right: 10px;
+      transition: all 0.5s ease-in-out;
 
       &:hover {
-        background: $button-hover-background;
+        background: var(--orange);
       }
     }
   }
