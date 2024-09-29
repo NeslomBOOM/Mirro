@@ -1,10 +1,7 @@
-import scrollreveal from "scrollreveal";
-import {useEffect} from "react";
 import { Routes, Route } from "react-router-dom";
 
 
 import Navbar from "./components/Navbar.jsx";
-import ScrollOnTop from "./components/ScrollOnTop.jsx";
 import Footer from "./components/Footer.jsx";
 import AboutMe from "./components/AboutMe.jsx";
 import Services from "./components/Services.jsx";
@@ -14,6 +11,7 @@ import Layout from "./Layout.jsx";
 
 function App() {
   return (
+
     <div className="app-container">
       <Navbar/>
         <Routes>

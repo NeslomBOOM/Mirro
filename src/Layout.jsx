@@ -7,7 +7,6 @@ import AboutMe from "./components/AboutMe.jsx";
 import Services from "./components/Services.jsx";
 import PresentStore from "./components/PresentStore.jsx";
 import Contact from "./components/Contact.jsx";
-import Footer from "./components/Footer.jsx";
 
 const Layout = () => {
     useEffect(()=>{
