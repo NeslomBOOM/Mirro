@@ -3,6 +3,7 @@ import logo from "./../assets/logo.svg";
 import {FaShoppingCart} from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -10,7 +11,7 @@ const Navbar = () => {
     return (
         <nav>
             <div className="brand">
-                <img src={logo} alt=""/>
+                <Link to="/"><img src={logo} alt=""/></Link>
             </div>
             <div className="toggle-container">
                 <div className="toggle">
@@ -23,11 +24,10 @@ const Navbar = () => {
             </div>
             <div className={`links-container ${navState ? "nav-visible" : ""}`}>
                 <ul className="links">
-                    <li><a href="#Presents">Presents</a></li>
-                    <li><a href="#Prints">Prints</a></li>
-                    <li><a href="#Store">Store</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                    <li><Link to="/services">Services</Link></li>
+                    <li><Link to="/presentstore">Store</Link></li>
+                    <li><Link to="/aboutme">About</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
                 <button className="cart-btn">
                     <FaShoppingCart/>
